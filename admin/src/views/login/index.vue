@@ -2,7 +2,7 @@
   <div class="login-page">
     <div class="login-box">
       <div class="login-header">
-        <h2>唯伊美妆</h2>
+        <h2>我的花园</h2>
         <p>管理后台登录</p>
       </div>
 

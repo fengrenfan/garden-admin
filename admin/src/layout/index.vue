@@ -3,8 +3,8 @@
     <!-- 侧边栏 -->
     <el-aside :width="isCollapse ? '64px' : '220px'" class="aside">
       <div class="logo">
-        <span v-if="!isCollapse">唯伊美妆</span>
-        <span v-else>美妆</span>
+        <span v-if="!isCollapse">我的花园</span>
+        <span v-else>花园</span>
       </div>
 
       <el-menu
@@ -20,61 +20,6 @@
           <el-icon><Odometer /></el-icon>
           <template #title>首页</template>
         </el-menu-item>
-
-        <el-sub-menu index="/product">
-          <template #title>
-            <el-icon><Goods /></el-icon>
-            <span>商品管理</span>
-          </template>
-          <el-menu-item index="/product/list">商品列表</el-menu-item>
-          <el-menu-item index="/product/category">分类管理</el-menu-item>
-        </el-sub-menu>
-
-        <el-sub-menu index="/order">
-          <template #title>
-            <el-icon><List /></el-icon>
-            <span>订单管理</span>
-          </template>
-          <el-menu-item index="/order/list">订单列表</el-menu-item>
-        </el-sub-menu>
-
-        <el-sub-menu index="/user">
-          <template #title>
-            <el-icon><User /></el-icon>
-            <span>用户管理</span>
-          </template>
-          <el-menu-item index="/user/list">用户列表</el-menu-item>
-        </el-sub-menu>
-
-        <el-sub-menu index="/member">
-          <template #title>
-            <el-icon><Medal /></el-icon>
-            <span>会员中心</span>
-          </template>
-          <el-menu-item index="/member/level">等级管理</el-menu-item>
-          <el-menu-item index="/member/period">考核期管理</el-menu-item>
-          <el-menu-item index="/member/user">会员详情</el-menu-item>
-        </el-sub-menu>
-
-        <el-sub-menu index="/marketing">
-          <template #title>
-            <el-icon><Present /></el-icon>
-            <span>营销管理</span>
-          </template>
-          <el-menu-item index="/marketing/banner">Banner管理</el-menu-item>
-          <el-menu-item index="/marketing/coupon">优惠券管理</el-menu-item>
-          <el-menu-item index="/marketing/quick-entry">快捷入口</el-menu-item>
-          <el-menu-item index="/marketing/product-recommend">商品推荐</el-menu-item>
-          <el-menu-item index="/marketing/hot-products">热销商品</el-menu-item>
-        </el-sub-menu>
-
-        <el-sub-menu index="/system">
-          <template #title>
-            <el-icon><Setting /></el-icon>
-            <span>系统管理</span>
-          </template>
-          <el-menu-item index="/system/dict">字典管理</el-menu-item>
-        </el-sub-menu>
       </el-menu>
     </el-aside>
 
