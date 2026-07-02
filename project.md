@@ -176,19 +176,10 @@ garden-admin/
 - 登录接口：`POST /api/auth/admin-login`。
 - 登录成功后保存 `admin_token`、`adminUser`，并跳转到首页。
 
-### 9.2 首页 / 数据看板 (`dashboard/index.vue`)
+### 9.2 首页占位页 (`dashboard/index.vue`)
 
-- **欢迎横幅**：显示问候语与当前日期，提供“添加商品”和“处理订单”快捷入口。
-- **统计卡片**：今日订单、今日销售额、商品总数、用户总数。
-- **销售概况图表**：使用 ECharts 柱状图 + 折线图展示近 7 天/近 30 天销售额与订单量。
-- **销售排行 TOP 5**：展示热销商品名称、销量、销售额。
-- **最新订单**：展示最近 5 条订单。
-- **快捷操作 / 最新动态**：快速跳转到常用功能页面。
-- 涉及接口：
-  - `GET /dashboard/stats`
-  - `GET /dashboard/sales-trend?days=7|30`
-  - `GET /dashboard/product-ranking?limit=5`
-  - `GET /dashboard/latest-orders?limit=5`
+- 当前首页为空白占位页，不展示任何业务数据与功能入口。
+- 保留最小化样式容器，方便后续扩展。
 
 ### 9.3 商品管理
 
